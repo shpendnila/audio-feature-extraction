@@ -1,8 +1,8 @@
 FROM amazon/aws-lambda-python:3.8
 
-COPY app.py ./
+COPY src/app.py ./
 
-COPY bin ./
+COPY src/bin ./
 
 RUN yum -y install qt
 RUN yum -y install qt5-qtbase
