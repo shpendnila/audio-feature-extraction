@@ -22,8 +22,11 @@ Here we copied the Python script which contains the Lambda handler to the root d
 The bin directory contains sonic-annotator.so and also the Vamp directory, which itself contains the pYIN plugins. The .so files corresponding to the sonic-annotator and pYIN plugins can be extracted from the sonic-annotator and pYIN downloaded files.
 
 /bin
+
 ├── vamp
+
 │   └── pyin.so
+
 └── sonic-annotator.so
 
 We unpack the files in the bin directory to the root directory of the Docker image as well by copying the files that are inside the bin directory at the working directory.
